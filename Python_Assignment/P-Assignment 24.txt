@@ -1,0 +1,33 @@
+Q:1 What is the relationship between def statements and lambda expressions ?
+Ans: def statement: It is used to define a named function with a block of code. It follows the syntax: def function_name(arguments):.
+   Lambda expression: It is an anonymous function defined using the lambda keyword. It follows the syntax: lambda arguments: expression.
+
+Q2: What is the benefit of lambda?
+Ans: Lambda expressions provide a compact syntax for defining small, anonymous functions. They allow you to define functions in a single 
+   line without the need for a def statement and a separate function name.
+
+Q3: Compare and contrast map, filter, and reduce.
+Ans:Purpose: map() applies a given function to each item in an iterable and returns an iterator with the results.
+  Purpose: filter() creates an iterator containing elements from an iterable for which a given function returns True.
+  Purpose: reduce() applies a rolling computation to sequential pairs of elements from an iterable, reducing them to a single value.
+
+Q4: What are function annotations, and how are they used?
+Ans:4.Function annotations in Python are a way to attach metadata or hints about the types of parameters and return values of functions. 
+  They allow you to provide additional information about the function's intended usage, without affecting the function's actual behavior.
+
+Q5: What are recursive functions, and how are they used?
+Ans: .Recursive functions are functions that call themselves within their own definition. In other words, 
+  a recursive function solves a problem by reducing it into smaller, simpler instances of the same problem until it reaches a base case that can be directly solved.
+
+Q6: What are some general design guidelines for coding functions?
+Ans:6.(i) Function Purpose
+  (ii) Function Naming
+  (iii) Function Length
+  (iv) Function Parameters
+  (v) Function Return Values
+
+Q7: Name three or more ways that functions can communicate results to a caller.
+Ans .(i) Return Statement
+  (ii) Modifying Mutable Objects
+  (iii) Global Variables
+

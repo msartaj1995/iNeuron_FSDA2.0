@@ -1,0 +1,94 @@
+1. What does RGBA stand for?
+
+ANS=>RGBA stands for Red Green Blue Alpha. It is a color model that is used to represent colors in digital images and computer graphics. The RGBA model is similar to the RGB model, which uses three color components (red, green, and blue) to represent colors, but it adds a fourth component (alpha) that represents the opacity or transparency of the color. The alpha component specifies how much of the color is visible, with a value of 0 representing complete transparency and a value of 1 representing complete opacity.
+
+2. From the Pillow module, how do you get the RGBA value of any images?
+
+ANS=>To get the RGBA value of an image using the Pillow module in Python, you can use the getpixel() method of the Image class.
+
+Here is an example code snippet that demonstrates how to get the RGBA value of a pixel at position (x,y) in an image:
+
+from PIL import Image
+
+# Open the image file
+image = Image.open('example.png')
+
+# Get the RGBA value of the pixel at position (x,y)
+rgba = image.getpixel((x, y))
+
+print(rgba) # Output: (R, G, B, A)
+
+
+3. What is a box tuple, and how does it work?
+
+ANS=>In the context of image processing, a "box tuple" refers to a tuple of four integer values (left, upper, right, lower) that represent the coordinates of a rectangular region within an image. This rectangular region is commonly referred to as a "bounding box."
+
+Here is a breakdown of each value in the box tuple:
+
+left: The x-coordinate of the left edge of the bounding box.
+upper: The y-coordinate of the upper edge of the bounding box.
+right: The x-coordinate of the right edge of the bounding box.
+lower: The y-coordinate of the lower edge of the bounding box.
+Together, these four values define the rectangular area within an image.
+
+4. Use your image and load in notebook then, How can you find out the width and height of an Image object?
+
+ANS=>To find out the width and height of an Image object in Python, you can use the size attribute of the Image class in Pillow. Here is an example code snippet that demonstrates how to do this:
+
+from PIL import Image
+
+# Open the image file
+image = Image.open('example.png')
+
+# Get the width and height of the image
+width, height = image.size
+
+print('Width:', width)
+print('Height:', height)
+In the above code, replace 'example.png' with the filename of your image. The size attribute returns a tuple of two values representing the width and height of the image in pixels, respectively. We can then assign these values to the variables width and height, and print them out using the print() function.
+
+5. What method would you call to get Image object for a 100×100 image, excluding the lower-left quarter of it?
+
+ANS=>To get an Image object for a 100x100 image that excludes the lower-left quarter of it, you can use the crop() method of the Image class in Pillow.
+
+Here is an example code snippet that demonstrates how to do this:
+
+
+from PIL import Image
+
+# Open the original image file
+image = Image.open('example.png')
+
+# Define the box tuple for the region to be cropped
+box = (0, 50, 50, 100) # (left, upper, right, lower)
+
+# Crop the image using the box tuple
+cropped_image = image.crop(box)
+
+# Resize the cropped image to 100x100 pixels
+resized_image = cropped_image.resize((100, 100))
+
+# Save the resulting image to a file
+resized_image.save('result.png')
+In the above code, we first open the original image file using the Image.open() method. We then define a box tuple that excludes the lower-left quarter of the image, and use the crop() method to extract this region from the original image. We then resize the resulting cropped image to 100x100 pixels using the resize() method, and save the final result to a file.
+
+
+6. After making changes to an Image object, how could you save it as an image file?
+
+ANS=>To save an Image object as an image file, you can use the save() method provided by the Python Imaging Library (PIL) module.
+
+We first open the image file 'my_image.jpg' using the Image.open() method. After making some changes to the image, we then use the save() method to save the modified image as a new file named 'modified_image.jpg'.
+
+We can specify the file format of the saved image by using the appropriate file extension in the filename. For example, to save the image in PNG format, you can use the filename 'modified_image.png'. The save() method will automatically detect the file format from the filename extension.
+
+7. What module contains Pillow’s shape-drawing code?
+
+ANS=>The module that contains Pillow's shape-drawing code is ImageDraw. ImageDraw provides a set of methods for drawing various shapes on an image, such as lines, rectangles, circles, ellipses, polygons, and text.
+
+To use ImageDraw, you first need to create an ImageDraw.Draw object from the image you want to draw on. 
+
+8. Image objects do not have drawing methods. What kind of object does? How do you get this kind of object?
+
+ANS=>Image objects in Pillow do not have drawing methods. Instead, drawing methods are provided by the ImageDraw module, which provides a set of classes for drawing shapes and text on images.
+
+To get an ImageDraw object for a given image, you can create a new instance of the ImageDraw.Draw class, passing the image as an argument.

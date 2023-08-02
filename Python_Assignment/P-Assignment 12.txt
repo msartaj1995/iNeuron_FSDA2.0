@@ -1,0 +1,149 @@
+1. In what modes should the PdfFileReader() and PdfFileWriter() File objects will be opened?
+
+ANS=>
+import PyPDF2
+
+pdf_file = open('example.pdf', 'rb')
+pdf_reader = PyPDF2.PdfFileReader(pdf_file)
+To open a file for writing with PdfFileWriter(), you can use the following code:
+
+import PyPDF2
+
+pdf_output = open('output.pdf', 'wb')
+pdf_writer = PyPDF2.PdfFileWriter()
+Opening the file in binary mode is necessary because PDF files are binary files, which means that they are not written in plain text format. By opening the file in binary mode, you can read and write the raw binary data in the file.
+
+
+2. From a PdfFileReader object, how do you get a Page object for page 5?
+
+ANS=>To get a Page object for page 5 of a PDF file using a PdfFileReader object from PyPDF2 library in Python, you can use the following code:
+
+import PyPDF2
+
+# Open the PDF file in binary mode
+pdf_file = open('example.pdf', 'rb')
+
+# Create a PdfFileReader object
+pdf_reader = PyPDF2.PdfFileReader(pdf_file)
+
+
+3. What PdfFileReader variable stores the number of pages in the PDF document?
+
+ANS=>In PyPDF2, the PdfFileReader object has a numPages attribute that stores the total number of pages in the PDF document.
+
+# Get the number of pages in the PDF document
+num_pages = pdf_reader.numPages
+In the code above, numPages attribute is used to get the total number of pages in the PDF document. The value of num_pages will be an integer representing the number of pages in the PDF document.
+
+
+4. If a PdfFileReader object’s PDF is encrypted with the password swordfish, what must you do before you can obtain Page objects from it?
+
+ANS=>If a PdfFileReader object's PDF is encrypted with the password "swordfish",
+import PyPDF2
+
+# Create a PdfFileReader object for the encrypted PDF
+pdf_reader = PyPDF2.PdfFileReader(open('encrypted.pdf', 'rb'))
+
+# Decrypt the PDF using the password "swordfish"
+pdf_reader.decrypt('swordfish')
+
+# Now you can obtain Page objects from the PdfFileReader object
+page_1 = pdf_reader.getPage(0)
+In the above code, pdf_reader.decrypt('swordfish') decrypts the PDF using the password "swordfish". Once the PDF is decrypted, you can obtain Page objects from the pdf_reader object using the getPage() method.
+
+5. What methods do you use to rotate a page?
+
+ANS=>To rotate a page using PyPDF2 library in Python, you can use the rotateClockwise() and rotateCounterClockwise() methods of a Page object.
+Similarly, to rotate a page counter-clockwise, you can use the rotateCounterClockwise() method instead of rotateClockwise().
+
+
+6. What is the difference between a Run object and a Paragraph object?
+
+ANS=>Paragraph objects represent larger units of text in a Word document, while Run objects represent smaller units of text with specific formatting within a Paragraph.
+
+
+7. How do you obtain a list of Paragraph objects for a Document object that’s stored in a variable
+named doc?
+
+ANS=>It depends on the programming language and document processing library being used. However, assuming that the variable doc contains a Document object that represents a text document, the general approach to obtain a list of Paragraph objects from it is:
+
+Access the text content of the Document object.
+Split the text content into individual paragraphs.
+Create a list of Paragraph objects from the split paragraphs.
+
+8. What type of object has bold, underline, italic, strike, and outline variables?
+
+ANS=>The object that has bold, underline, italic, strike, and outline variables may vary depending on the programming language and document processing library being used. However, in many document processing libraries, such as docx for Python, these variables are properties of a "run" object.
+
+import docx
+
+doc = docx.Document('example.docx')
+
+# Checking if the run is bold
+if run.bold:
+    print('This run is bold.')
+
+# Setting the run to be underlined
+run.underline = True
+
+# Setting the run to be italicized and have an outline
+run.italic = True
+run.outline = True
+
+9. What is the difference between False, True, and None for the bold variable?
+
+ANS=True: This means that the text represented by the run is formatted as bold. When the bold property of a run object is set to True, the text will appear bolded in the final document.
+
+False: This means that the text represented by the run is not formatted as bold. When the bold property of a run object is set to False, the text will appear with normal weight in the final document.
+
+None: This means that the bold property of the run object is not explicitly set. In this case, the formatting of the text represented by the run will depend on the default formatting of the document or the parent style applied to the run.
+
+10. How do you create a Document object for a new Word document?
+
+ANS=>To create a Document object for a new Word document in Python using the python-docx library
+
+Import the Document class from the docx module.
+Create a new instance of the Document class.
+Here's an example of how to create a new Word document using python-docx:
+
+from docx import Document
+
+# Create a new Document object
+doc = Document()
+
+# Add content to the document (optional)
+doc.add_paragraph('This is my first paragraph.')
+
+# Save the document to a file
+doc.save('my_document.docx')
+
+
+11. How do you add a paragraph with the text 'Hello, there!' to a Document object stored in a
+variable named doc?
+
+ANS=>To add a paragraph with the text "Hello, there!" to a Document object stored in a variable named doc using python-docx in Python
+
+from docx import Document
+
+# Create a new Document object
+doc = Document()
+
+# Add a new paragraph to the document
+doc.add_paragraph('Hello, there!')
+
+# Save the document to a file
+doc.save('my_document.docx')
+
+12. What integers represent the levels of headings available in Word documents?
+
+ANS=>Here's a list of the integers that represent the levels of headings in Word documents:
+
+Heading 1: Level 1
+Heading 2: Level 2
+Heading 3: Level 3
+Heading 4: Level 4
+Heading 5: Level 5
+Heading 6: Level 6
+Heading 7: Level 7
+Heading 8: Level 8
+Heading 9: Level 9
