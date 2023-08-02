@@ -1,0 +1,40 @@
+1. What does an empty dictionary's code look like?
+
+ANS=An empty dictionary's code in Python looks like this:
+my_dict = {}
+
+2. What is the value of a dictionary value with the key 'foo' and the value 42?
+
+ANS=The value of a dictionary value with the key 'foo' and the value 42 would be 42.
+my_dict = {'foo': 42}
+value = my_dict['foo']
+
+
+3. What is the most significant distinction between a dictionary and a list?
+
+ANS=List are used to store the data, which should ordered and sequential.a list is an ordered collection of elements, where each element is identified by its position, or index, in the list. Lists are commonly used for storing and manipulating sequences of related data, such as a list of numbers or a list of names.
+
+4. What happens if you try to access spam['foo'] if spam is {'bar': 100}?
+
+ANS=If you try to access spam['foo'] and spam is {'bar': 100},  We will get a KeyError erro.
+
+5. If a dictionary is stored in spam, what is the difference between the expressions 'cat' in spam and
+'cat' in spam.keys()?
+
+ANS=There is no difference between the expressions 'cat' in spam and 'cat' in spam.keys(), as they both check if the key 'cat' is present in the dictionary spam.
+
+6. If a dictionary is stored in spam, what is the difference between the expressions 'cat' in spam and
+'cat' in spam.values()?
+
+ANS=The expression 'cat' in spam checks for the presence of 'cat' as a key in the dictionary, while 'cat' in spam.values() checks for the presence of 'cat' as a value in the dictionary.
+
+7. What is a shortcut for the following code?
+if 'color' not in spam:
+spam['color'] = 'black'
+
+ANS=spam.setdefault('color', 'black')
+
+8. How do you "pretty print" dictionary values using which module and function?
+
+ANS=To "pretty print" dictionary values in Python, you can use the pprint module, which provides a pprint() function that formats the dictionary in a human-readable way.
+

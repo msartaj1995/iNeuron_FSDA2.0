@@ -1,0 +1,50 @@
+1. How do you distinguish between shutil.copy() and shutil.copytree()?
+
+ANS=shutil.copy() is used to copy a single file, while shutil.copytree() is used to copy an entire directory tree.
+
+2. What function is used to rename files??
+
+ANS=In Python, the function used to rename files is os.rename().
+
+3. What is the difference between the delete functions in the send2trash and shutil modules?
+
+ANS=The send2trash module provides a cross-platform implementation for sending files and directories to the operating system's trash or recycle bin instead of permanently deleting them. This is a safer alternative to permanently deleting files, as it allows users to easily restore files that were accidentally deleted. The send2trash module only works if the operating system has a trash or recycle bin functionality.
+
+The send2trash module has only one function, send2trash, which takes the path of the file or directory to be deleted as its argument.
+
+4.ZipFile objects have a close() method just like File objects’ close() method. What ZipFile method is equivalent to File objects’ open() method?
+
+ANS=The ZipFile method that is equivalent to the File object's open() method is also called ZipFile.open(). This method is used to open a file within the ZIP archive and return a file-like object that can be used to read or write the file's contents.
+
+that like the File object's open() method, ZipFile.open() returns a file-like object, not a file object. This means that it does not have a close() method, and must be used within a with statement or manually closed using the close() method of the file-like object.
+
+
+5. Create a programme that searches a folder tree for files with a certain file extension (such as .pdf
+or .jpg). Copy these files from whatever location they are in to a new folder.
+
+ANS= Here's a Python program that searches a folder tree for files with a certain file extension and copies them to a new folder:
+
+
+import os
+import shutil
+
+# Set the source folder and file extension
+source_folder = "/path/to/source/folder"
+file_extension = ".pdf"
+
+# Set the destination folder
+destination_folder = "/path/to/destination/folder"
+
+# Iterate through the source folder tree and copy files with the specified extension
+for root, dirs, files in os.walk(source_folder):
+    for filename in files:
+        if filename.endswith(file_extension):
+            # Construct the full source path and destination path for the file
+            source_path = os.path.join(root, filename)
+            destination_path = os.path.join(destination_folder, filename)
+            # Copy the file to the destination folder
+            shutil.copy2(source_path, destination_path)
+In this program, the os.walk() function is used to recursively iterate through the folder tree starting from source_folder. For each file in the tree, the program checks if its extension matches file_extension. If it does, the program constructs the full source and destination paths for the file using the os.path.join() function and copies the file to destination_folder using the shutil.copy2() function.
+
+
+

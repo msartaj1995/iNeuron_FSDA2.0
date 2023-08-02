@@ -1,0 +1,109 @@
+1. What are escape characters, and how do you use them?
+
+ANS=These are the escape characters:-
+\n - Newline character
+\t - Tab character
+\b - Backspace character
+\r - Carriage return character
+' - Single quote character
+" - Double quote character
+
+we use these like:-
+print("Hello\nWorld!")
+This would output:
+Hello
+World!
+
+2. What do the escape characters n and t stand for?
+
+ANS= In programming, the escape character "\n" represents a newline character and "\t" represents a tab character.
+
+3. What is the way to include backslash characters in a string?
+
+ANS=The backslash is used as an escape character in Python, so if you simply try to include a backslash in a string without escaping it, it will be interpreted as the start of an escape sequence
+print("C:\\Users\\John")
+This would output:
+
+C:\Users\John
+
+4. The string "Howl's Moving Castle" is a correct value. Why isn't the single quote character in the
+word Howl's not escaped a problem?
+
+ANS=The single quote character in "Howl's" is not causing a problem in this case because it is not being interpreted as a delimiter for the string due to the use of double quotes to define the string.  
+For example, the following two string definitions are equivalent:
+
+title1 = "Howl's Moving Castle"
+title2 = 'Howl\'s Moving Castle'
+Both of these strings will be interpreted as "Howl's Moving Castle". In the first example, the single quote within the string is not causing a problem because the string is defined using double quotes. In the second example, the single quote within the string is escaped using a backslash because the string is defined using single quotes.
+
+5. How do you write a string of newlines if you don't want to use the n character?
+
+ANS=If you don't want to use the "\n" character to represent newlines in a string in Python, you can use multiline strings and separate the lines using triple quotes ("""...""").
+
+6. What are the values of the given expressions?
+'Hello, world!'[1]
+'Hello, world!'[0:5]
+'Hello, world!'[:5]
+'Hello, world!'[3:]
+
+ANS=The values of the given expressions are:
+
+'Hello, world!'[1] returns the character at index 1, which is 'e'.
+'Hello, world!'[3:] returns the substring from index 3 to the end of the string, which is 'lo, world!'.
+
+7. What are the values of the following expressions?
+'Hello'.upper()
+'Hello'.upper().isupper()
+'Hello'.upper().lower()
+
+ANS=The values of the following expressions are:
+
+'Hello'.upper() returns the string in uppercase, which is 'HELLO'.
+'Hello'.upper().isupper() returns True because the string 'HELLO' is all uppercase.
+'Hello'.upper().lower() returns the string in lowercase, which is 'hello'.
+So, the overall values of the expressions are:
+
+'Hello'.upper() returns 'HELLO'.
+'Hello'.upper().isupper() returns True.
+'Hello'.upper().lower() returns 'hello'.
+
+8. What are the values of the following expressions?
+'Remember, remember, the fifth of July.'.split()
+'-'.join('There can only one.'.split())
+
+ANS=The values of the following expressions are:
+
+'Remember, remember, the fifth of July.'.split() returns ['Remember,', 'remember,', 'the', 'fifth', 'of', 'July.'].
+'-'.join('There can only one.'.split()) returns 'There-can-only-one.'.
+
+9. What are the methods for right-justifying, left-justifying, and centering a string?
+
+ANS=In Python, the following are the methods for right-justifying, left-justifying, and centering a string:
+
+str.rjust(width, [fillchar]): Returns a string with the original string right-justified to a total width. You can optionally specify a fill character to use in place of whitespace. For example:
+
+>>> s = "hello"
+>>> s.rjust(10, "-")
+'-----hello'
+str.ljust(width, [fillchar]): Returns a string with the original string left-justified to a total width. You can optionally specify a fill character to use in place of whitespace. For example:
+
+>>> s = "hello"
+>>> s.ljust(10, "-")
+'hello-----'
+str.center(width, [fillchar]): Returns a string with the original string centered in a total width. You can optionally specify a fill character to use in place of whitespace. For example:
+
+>>> s = "hello"
+>>> s.center(10, "-")
+'--hello---'
+In all of these methods, width is the total width of the resulting string, and fillchar is the optional fill character to use. If you do not specify a fill character, the method will use whitespace as the default fill character.
+
+10. What is the best way to remove whitespace characters from the start or end?
+
+ANS=In Python, you can use the strip() method to remove whitespace characters from the start and end of a string. The strip() method removes any whitespace characters such as spaces, tabs, and newlines from the beginning and end of the string. Here's an example:
+
+>>> s = "  Hello, world!  "
+>>> s.strip()
+'Hello, world!'
+In this example, the strip() method removes the two whitespace characters at the start and end of the string, leaving only the desired text.
+
+
