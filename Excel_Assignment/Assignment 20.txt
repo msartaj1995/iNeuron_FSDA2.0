@@ -1,0 +1,93 @@
+Q1: Q1. Write a VBA code to select the cells from A5 to C10. Give it a name
+“Data Analytics” and fill the cells with the following cells “This is Excel
+VBA”
+
+NumberOdd or even
+
+56
+89
+26
+36
+75
+48
+92
+58
+13
+25
+Ans:- 1. sub abc()
+   dim num as integer
+   num =CInt(inputbox("please enter any integer"))
+   if num Mod 2<> 1 then
+   MsgBox str(num) +"is a Even Number"
+   else
+   MsgBox str(num) +"is a odd number"
+   End if
+   End sub
+
+Q2. Use the above data and write a VBA code using the following
+statements to display in the next column if the number is odd or even
+a. IF ELSE statement
+b. Select Case statement
+c. For Next Statement
+
+ANS=>Sure, here's the VBA code to display whether the numbers in column A are odd or even using the IF ELSE statement, Select Case statement, and For Next Statement in the next column (column B):
+
+Sub OddEven()
+    Dim LastRow As Long
+    Dim i As Long
+    
+    LastRow = Cells(Rows.Count, 1).End(xlUp).Row
+    
+    'Using IF ELSE statement
+    For i = 1 To LastRow
+        If Cells(i, 1) Mod 2 = 0 Then
+            Cells(i, 2) = "Even"
+        Else
+            Cells(i, 2) = "Odd"
+        End If
+    Next i
+    
+    'Using Select Case statement
+    For i = 1 To LastRow
+        Select Case Cells(i, 1) Mod 2
+            Case 0
+                Cells(i, 3) = "Even"
+            Case 1
+                Cells(i, 3) = "Odd"
+        End Select
+    Next i
+    
+    'Using For Next statement
+    For i = 1 To LastRow
+        Cells(i, 4) = IIf(Cells(i, 1) Mod 2 = 0, "Even", "Odd")
+    Next i
+End Sub
+This code will loop through the data in column A and check whether each number is odd or even using the three different statements. The results will be displayed in columns B, C, and D, respectively.
+
+
+Q3. What are the types of errors that you usually see in VBA?
+
+Ans:3.In Visual Basic, errors fall into one of three categories: 
+  syntax errors, run-time errors, and logic errors.
+
+Q4: How do you handle Runtime errors in VBA?
+
+Ans4. Use the Resume Next statement with On Error. 
+
+Q5:  Write some good practices to be followed by VBA users for handling errors?
+
+Ans5. (i)  Use 'On Error Go [Label]' at the beginning of the code.
+   (ii) Use 'On Error Resume Next' ONLY when you're sure about the errors that can occur.
+   (iii) When using error handlers, make sure you're using Exit Sub before the handlers.
+   (iv) Use multiple error handlers to trap different kinds of errors.
+
+Q6 What is UDF? Why are UDF’s used? Create a UDF to multiply 2 numbers in VBA ?
+
+Ans6.  With VBA, you can create a custom Function (also called a User Defined Function) that can be used in the worksheets just like regular functions.
+    These are helpful when the existing Excel functions are not enough.
+           Function Mul() As Double
+           Dim C As Integer
+           C = ActiveCell.Column
+           Mul = Cells(11, C) * Cells(115, C)
+           End Function
+   
