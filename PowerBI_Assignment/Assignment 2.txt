@@ -1,0 +1,87 @@
+Q1: Explain the advantages of Natural Queries in PowerBi with an example?
+Ans In Power BI, Natural Language Queries (NLQ) offer several advantages that enhance the user experience and make data exploration more accessible. 
+   NLQ allows users to interact with their data by typing or speaking questions in a natural language format, rather than using traditional query languages or complex formulas.
+   
+     (i)Ease of use: NLQ eliminates the need for users to have prior knowledge of query languages or complex data modeling concepts. 
+       Users can simply ask questions in plain language, making it easier for non-technical users to interact with data and gain insights. 
+    (ii) Accessibility: NLQ enables a broader range of users to access and explore data. People who are not familiar with data analysis tools or have limited technical 
+         skills can still ask questions and get meaningful answers. This promotes data democratization within an organization.
+
+Q2 Explain Web Front End(WFE) cluster from Power BI Service Architecture?
+Ans  In the Power BI service architecture, the Web Front End (WFE) cluster plays a crucial role in handling user interactions and serving the Power BI web interface. 
+    The WFE cluster consists of multiple servers that work together to provide a scalable and reliable web front-end for Power BI users.
+   (i) User interactions: The WFE cluster receives user requests and interactions through the Power BI web interface. This includes actions such as accessing dashboards, 
+       reports, creating content, sharing, and managing data. The WFE cluster acts as the entry point for all user activities.
+   (ii)Load balancing and scalability: The WFE cluster is responsible for distributing incoming user requests across multiple servers. 
+       It uses load balancing techniques to ensure even distribution of the workload and optimize performance. This allows the Power BI service to 
+       handle a large number of concurrent users and scale horizontally as the user base grows.
+
+Q3 Explain Back End cluster from Power BI Service Architecture?
+Ans:  In the Power BI service architecture, the Back End cluster plays a critical role in handling data processing, storage, and management tasks. 
+    The Back End cluster is responsible for various backend operations that enable data ingestion, transformation, storage, and retrieval within the Power BI service.
+   (i) Data processing and transformation: The Back End cluster handles data processing tasks such as data ingestion, transformation, and modeling. 
+       It supports various data sources and connectors, allowing users to import data from different systems into Power BI. The cluster performs data 
+       transformations and modeling operations to prepare the data for visualization and analysis.
+   (ii) Data storage: The Back End cluster manages the storage of data within the Power BI service. It leverages data storage technologies such as Azure Data Lake Storage,
+      Azure SQL Database, and Azure Analysis Services. The cluster ensures efficient and scalable storage of user data, reports, and dashboards, enabling quick 
+      access and retrieval.
+
+Q4 What ASP.NET component does in Power BI Service Architecture?
+
+Ans.In the Power BI service architecture, ASP.NET plays a crucial role as a web application framework for developing and hosting web applications, 
+  including the Power BI service. ASP.NET is a component that provides the foundation for building and running the web interface of the Power BI service. 
+
+(i) Web Application Development: ASP.NET is used to develop the web application that powers the Power BI service. It provides a framework for creating dynamic, 
+    data-driven web applications with features such as server-side scripting, database connectivity, and user interface controls. ASP.NET enables developers to build 
+   the functionality and user experience of the Power BI web interface.
+(ii) Request Processing: When a user interacts with the Power BI service, their requests are handled by the ASP.NET component. ASP.NET receives the user requests, 
+     processes them, and determines the appropriate actions to take based on the requested operations. It manages the routing of requests to the appropriate components 
+     and services within the Power BI service architecture.
+
+Q5: Compare Microsoft Excel and PowerBi Desktop on the following features:
+Data import
+Data transformation
+Modeling
+Reporting
+Server Deployment
+Convert Models
+Cost
+
+Ans Excel and Power BI both offer data import capabilities, but they differ in their approach and functionality.
+
+(i) Data Volume and Performance: Excel is primarily designed for working with smaller datasets and limited data volumes. It is well-suited for individual users and 
+    small-scale data analysis. Power BI, on the other hand, is optimized for handling large volumes of data and is built to handle complex data models and relationships.
+    Power BI can efficiently import and process millions of rows of data, providing faster performance and scalability for enterprise-level data analysis.
+
+(ii) Data Modeling and Transformation: Excel provides basic data modeling and transformation capabilities through functions, formulas, and pivot tables. 
+     Users can perform simple calculations, filtering, and aggregations within Excel. Power BI, however, offers advanced data modeling and transformation capabilities. 
+     It allows users to create relationships between tables, define calculated columns and measures, and perform complex data transformations using Power Query Editor. 
+     Power BI's data modeling features provide a more robust and flexible environment for data analysis and visualization.
+
+(iii) Cost: Excel is a part of the Microsoft Office suite and is typically included in the Office package, which users purchase with a one-time license or as 
+      part of a subscription plan like Microsoft 365. Power BI, on the other hand, offers different licensing options. Power BI Desktop, the authoring tool,
+        is free to download and use. However, to publish and share reports and dashboards, you need a Power BI Pro license, which requires a monthly or annual subscription fee. Power BI also offers a premium licensing option (Power BI Premium) for organizations with more extensive needs, 
+      such as larger datasets, higher refresh frequencies, and advanced capabilities.
+
+Q6 List 20 data sources supported by Power Bi desktop.
+Ans Excel workbook (local or cloud-based)
+  CSV (Comma Separated Values) file
+  SQL Server database
+  Azure SQL Database
+  Oracle database
+  MySQL database
+  PostgreSQL database
+  SharePoint Online List
+  SharePoint Server (on-premises) List
+  Salesforce
+  Dynamics 365
+  Google Analytics
+  Azure Blob Storage
+  Azure Data Lake Storage
+  SharePoint Folder
+  JSON file
+  XML file
+  Web page (HTML)
+  OData feed
+  Hadoop Distributed File System (HDFS)
+ 

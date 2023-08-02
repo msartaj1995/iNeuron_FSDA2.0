@@ -1,0 +1,40 @@
+Q1: What do you mean by BI? Explain.
+Ans:  BI stands for Business Intelligence. It refers to the strategies, technologies, and tools used to collect, 
+   analyze, and present data to support business decision-making processes. The primary goal of BI is to transform raw data into meaningful and actionable insights, enabling organizations to make informed decisions, 
+   optimize performance, and gain a competitive edge.
+
+Q2: How Power-BI helps in BI, and how does it help Analysts? Explain.
+Ans:.Power BI is a powerful business intelligence tool developed by Microsoft. 
+  It helps in BI by providing a comprehensive set of features and functionalities to collect, analyze,
+  and visualize data. Here's how Power BI specifically helps analysts in their BI efforts:
+
+PowerBI allows to connect with multiple data sources, such as databases, cloud services, spreadsheets, and web APIs
+Data Transformation and Modeling is Helps  Analysts can use Power Query, a data preparation tool within Power BI, to clean, transform,and shape the data as needed. It offers a user-friendly interface for performing tasks likefiltering, merging, splitting, and aggregating data. Power BI also provides a robust data modeling capability.
+
+Q3 Explain Descriptive analytics?
+Ans: Descriptive analytics is a branch of analytics that focuses on understanding historical data and providing insights into what has
+   happened in the past. It involves summarizing and analyzing data to describe and visualize patterns, trends, and 
+   key characteristics of a given dataset. The main goal of descriptive analytics is to gain a comprehensive understanding of 
+   past events and provide a foundation for decision-making and further analysis.
+
+Q4: Explain Predictive analytics?
+Ans  Predictive analytics is a branch of analytics that uses historical data, statistical modeling, and machine learning techniques 
+    to make predictions and forecasts about future events or outcomes. It aims to leverage patterns and relationships in the data to 
+    identify and understand the factors that can influence future behavior or event.
+
+Q5 Explain perspective analytics?
+Ans: Prescriptive analytics is a statistical method that focuses on finding the ideal way forward or action necessary for a 
+   particular scenario, based on data. Prescriptive analytics uses both descriptive and predictive analytics but the focus here 
+   remains on actionable insights rather than data monitoring.
+
+Q6: Write five real-life questions that PowerBi can solve.
+
+Ans  (i) Power BI assist in HR analytics and workforce planning.
+    (ii) Power BI help in financial data analysis and reporting.
+    (iii)Power BI help with inventory management and supply chain optimization.
+    (iv) Power BI assist in monitoring and optimizing website performance.
+    (v)Power BI help analyze sales data to identify trends and patterns
+
+
+
+                              

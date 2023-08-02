@@ -1,0 +1,77 @@
+Q1 Explain DAX?
+Ans: DAX, which stands for Data Analysis Expressions, is a formula language used in Power BI, Power Pivot, and Analysis Services to perform calculations, 
+  create custom measures, and define relationships between data tables. It is a powerful and versatile language designed specifically for working with tabular data models. 
+
+Q2: Explain datasets, reports, and dashboards and how they relate to each other?
+Ans Datasets: Datasets are the foundation of Power BI and represent the collection of data that you import or connect to from various sources. 
+  A dataset is a structured set of tables that contain the actual data you want to analyze. These tables can be sourced from files, databases, online services, 
+  or other data connectors. Datasets organize and store the underlying data, including its structure, relationships between tables, and metadata.
+
+  Reports: Reports in Power BI are interactive visualizations that display data from one or more datasets. A report is a collection of visual elements, 
+  such as charts, tables, matrices, and images, that represent the data in a visually appealing and informative manner. Reports allow users to explore, analyze, 
+  and present data insights based on the underlying dataset.
+
+  Dashboards: Dashboards provide a high-level summary view of key metrics and visualizations from one or more reports and datasets. A dashboard is a single canvas 
+  that allows you to combine visualizations, tiles, and other elements from multiple reports into a single view. Dashboards provide a consolidated and customizable 
+  overview of critical information, enabling users to monitor and track key performance indicators (KPIs) at a glance.
+
+Q3 How reports can be created in power BI, explain two ways with Navigation of each?
+Ans.Power BI Desktop:
+   Power BI Desktop is a robust desktop application that provides advanced data modeling, visualization, and report authoring capabilities. 
+   It offers a comprehensive environment for creating rich, interactive reports. Here's the navigation flow for creating a report in Power BI Desktop.
+
+  Step 1: Connect to Data:
+   Launch Power BI Desktop.
+  Click on "Get Data" in the Home tab to connect to your desired data source(s).
+   Choose the appropriate connector (e.g., Excel, SQL Server, SharePoint, etc.) and follow the prompts to connect to your data.
+
+  Step 2: Data Transformation and Modeling:
+   Once connected, the Power Query Editor window opens, allowing you to perform data transformations, such as filtering, shaping, and merging data.
+   Use the Query Editor's various options and transformations to clean and shape the data as needed.
+   Click on the "Close & Apply" button to load the transformed data into the Power BI Desktop.
+
+  Power BI Service:
+  Power BI Service is the cloud-based platform where you can create, publish, and share reports with others. 
+  It provides a browser-based interface for report creation and collaboration. Here's the navigation flow for creating a report in Power BI Service:
+
+ Step 1: Navigate to Power BI Service:
+  Open your preferred web browser and go to the Power BI Service website (app.powerbi.com).
+  Sign in with your Power BI account credentials.
+
+ Step 2: Create a Report:
+  In the Power BI Service, click on "Workspace" on the left-hand navigation pane to access your desired workspace.
+  Click on the "Create" button at the top of the screen.
+  Select "Report" from the drop-down menu to create a new report.
+
+Q4: How to connect to data in Power BI? How to use the content pack to connect to google analytics? Mention the steps.
+Ans: (i) Launch Power BI Desktop or navigate to the Power BI Service website (app.powerbi.com) and sign in to your Power BI account.
+   (ii) Connect to Data in Power BI Desktop
+   (iii) Connect to Data in Power BI Service
+   (iv) Connect to Google Analytics using Content Pack
+   (v) Configure and Load Data
+   (vi) Explore and Analyze the Data
+
+Q5 How to import Local files in Power BI? Mention the Steps.
+Ans (i) Launch Power BI Desktop or navigate to the Power BI Service 
+   (ii) Connect to Data in Power BI Desktop
+   (iii) Browse and Select the Local File
+   (iv) Configure Import Settings
+   (v) Transform and Shape the Data (Power Query Editor)
+  (vi)Explore and Analyze the Data
+  (vii) Save and Publish
+
+Q6: In Power BI visualization, what are Reading View and Editing view?
+Ans. Reading View:
+(i) Reading View is the default mode when you open a report in Power BI.
+(ii) In Reading View, you can view and interact with the visualizations within the report.
+(iii) You can apply filters, drill down into data, sort visualizations, and explore the information presented in the report.
+(iv) Reading View provides a user-friendly and interactive experience for consuming and analyzing data without making any changes to the report structure or visuals.
+(v) You can interact with slicers, click on data points in charts for additional insights, or use the navigation features to explore different pages or sections of the report.
+
+ Editing View:
+
+(i) Editing View allows you to modify and customize the content, structure, and layout of the report.
+(ii) When you switch to Editing View, you gain access to additional options and features for authoring and designing the report.
+(iii) In Editing View, you can add, remove, or modify visualizations, change their properties, and adjust the report layout.
+(iv) You can also add new pages, rearrange existing pages, and apply formatting and styling to enhance the visual appeal of the report.
+(v) Editing View provides a more advanced and flexible environment for creating, refining, and fine-tuning your report design.

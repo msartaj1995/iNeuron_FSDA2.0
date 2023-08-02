@@ -1,0 +1,36 @@
+Q1: List and explain different PowerBi products?
+Ans. (i) Power BI Desktop: Power BI Desktop is a powerful Windows application used for creating data models, designing interactive reports, and building data visualizations. 
+      It provides a rich set of features, including advanced data shaping and modeling capabilities, custom calculations, interactive visualizations, and the ability 
+      to connect to various data sources.
+   (ii) Power BI Service: Power BI Service, also known as Power BI online or Power BI cloud, is a web-based platform for publishing, sharing, and collaborating on 
+        Power BI reports and dashboards. It allows users to access their Power BI content from anywhere, collaborate with colleagues, and share insights with others. 
+        Power BI Service also provides additional features such as data refresh scheduling, dashboards, and sharing options.
+   (iii) Power BI Mobile Apps: Power BI Mobile Apps are available for iOS and Android devices, enabling users to access and interact with Power BI content on the go. T
+        he mobile apps provide a responsive and optimized experience for viewing and exploring reports and dashboards, sharing insights, and receiving data-driven 
+   
+Q2: What limitations of Excel, Microsoft solved by PowerBi?
+Ans: Scalability: Excel has limitations in handling large volumes of data efficiently. Power BI is designed to handle and process large datasets, allowing users to 
+    work with millions of rows of data and perform complex calculations and transformations with improved performance.
+
+   Data Modeling and Relationships: Excel provides basic data modeling capabilities through functions and pivot tables. Power BI offers more advanced data modeling 
+   features, allowing users to create relationships between tables, define calculated columns and measures, and build complex hierarchies. Power BI's data modeling 
+    capabilities provide a more flexible and robust environment for analyzing and visualizing data.
+   Power BI provides a wide range of built-in connectors, allowing users to easily connect to various cloud-based and on-premises data sources, such as databases, 
+   web services, SharePoint, Salesforce, and more.
+
+Q3 Explain PowerQuery?
+Ans:  Data Source Connectivity: Power Query supports a wide range of data sources, including relational databases, cloud-based services, files (such as Excel, CSV, JSON), Data Shaping and Transformation: Power Query provides a rich set of transformation options to clean, reshape, and transform data. Users can apply various 
+    operations such as filtering, sorting, grouping, pivoting, merging, splitting, and appending to shape the data according to their needs. Power Query offers an  Data Cleaning and Data Quality: Power Query includes features to clean and improve data quality. Users can perform tasks such as removing duplicates
+
+Q4 Explain PowerMap?
+Ans Power Map is a 3D data visualization tool that was part of the Microsoft Excel suite. It allowed users to transform geographical and temporal data into 
+   interactive and visually appealing maps. However, it's important to note that Power Map has been deprecated and is no longer actively developed by Microsoft.
+
+Q5 How powerBi eliminated the need to host SharePoint Server on premises?
+Ans: Power BI eliminates the need to host SharePoint Server on-premises by providing a cloud-based platform for data visualization, reporting, and collaboration.
+
+Q6 Explain the updates done in Power Bi Service(power BI 2.0) as compared to older version ?
+Ans.  Modern and Responsive User Interface: Power BI Service underwent a major UI overhaul, introducing a modern and responsive design. 
+    The new interface offers a more intuitive and user-friendly experience, making it easier to navigate, access content, and interact with reports and dashboards.
+
+    
